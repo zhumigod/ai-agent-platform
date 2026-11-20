@@ -106,12 +106,12 @@ const bubbles = [
 
       <form class="login__form" @submit.prevent="submit">
         <div class="login__field">
-          <label class="login__label" for="login-email">邮箱地址</label>
+          <label class="login__label" for="login-email">邮箱地址或用户名</label>
           <v-text-field
             id="login-email"
             v-model="identifier"
             prepend-inner-icon="mdi-email-outline"
-            type="email"
+            type="text"
             autocomplete="username"
             density="comfortable"
             hide-details
